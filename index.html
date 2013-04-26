@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+	<title>POP Play!</title>
+	<script src="jquery.min.js"></script>
+	<script src="http://localhost:3003/socket.io/socket.io.js"></script>
+	<script>
+		var socket = io.connect('http://localhost', { 
+			port : 3003
+			, 'reconnect': true
+			,'reconnection delay': 5000
+			,'max reconnection attempts': 10 });
+		socket.on('update-resp', function (doc) {
+			$('#tweets').html('');
+			$('#tweets').append('<li>'+ doc.createdate +' ('+ doc.ts +') - '+ doc.text +'</li>');
+		});
+	</script>
+</head>
+<body>
+	<ul id="tweets"></ul>
+</body>
+</html>
