@@ -1,5 +1,5 @@
 {
-  "name": "S-Sense Play! push service",
+  "name": "nodejs-mongodb-stream",
   "description": "Streaming data in MongoDB collection (capped collecion) and push to client.",
   "author": { 
 	"name": "KHASATHAN", 
