@@ -19,6 +19,7 @@ Streaming data in collection and push to client.
 ### Nodejs
 Install requires modules for this project. you can use NPM (Nodejs Package Manager)
  ```
+ cd nodejs-mongodb-stream
  npm install
  ``` 
 NPM will be install specific modules in _package.json_ file. After install you should have _node\_modules_ directory.
