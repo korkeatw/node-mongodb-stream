@@ -42,21 +42,17 @@ Check the collection you create is capped
   * **size (int)** size of colleciton in byte
   * **max (int)** max document in collection
 
-> 
 >**NOTE:** The capped collection provide to use in some case like real-time push service. It's NOT used for data storage because old data in capped collection will be deleted automatically. If you want store data, you can insert data into general collection too.
->
 >See MongoDB document about _Capped Collection_ here http://docs.mongodb.org/manual/core/capped-collections
->
 
 
 ## Running and testing app
  * Start Mongodb first
  * Running Nodejs server
  
- ```
- cd nodejs-mongodb-stream
- node app.js
- ```
+ ```cd nodejs-mongodb-stream
+ node app.js```
+ 
  * Open index.html in web browser
  * Insert document into MongoDB message should be appear in browser
 
