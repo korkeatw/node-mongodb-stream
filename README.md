@@ -7,11 +7,11 @@ Streaming data in collection and push to client.
 ## Installation
 * Download Nodejs from http://nodejs.org/. In Ubuntu 13.04 you can install using apt-get
 
- ``` sudo apt-get install nodejs ```
+``` sudo apt-get install nodejs ```
 
 * Download source code of this project from https://github.com/khasathan/nodejs-mongodb-stream. However, you can clone by git
 
- ``` git clone https://github.com/khasathan/nodejs-mongodb-stream.git ```
+``` git clone https://github.com/khasathan/nodejs-mongodb-stream.git ```
 
 
 ## Set up environments
@@ -41,9 +41,10 @@ Check the collection you create is capped
 * **size (int)** size of colleciton in byte
 * **max (int)** max document in collection
 
+>
 >**NOTE:** The capped collection provide to use in some case like real-time push service. It's NOT used for data storage because old data in capped collection will be deleted automatically. If you want store data, you can insert data into general collection too.
 >See MongoDB document about _Capped Collection_ here http://docs.mongodb.org/manual/core/capped-collections
-
+>
 
 ## Running and testing app
 * Start Mongodb first
