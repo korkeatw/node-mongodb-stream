@@ -1,7 +1,7 @@
-Nodejs-mongodb-stream
+Node MongoDB Stream
 =====================
 
-Streaming data in collection and push to client.
+Streams data in capped collection and push to client.
 
 
 ## Installation
