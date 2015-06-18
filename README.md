@@ -8,6 +8,11 @@ Streaming data in collection and push to client.
 * Download Nodejs from http://nodejs.org/. In Ubuntu 13.04 you can install using apt-get
 
  ``` sudo apt-get install nodejs ```
+ 
+ >
+ > If you install Node.js via ```apt-get``` you can run Node.js application using ```nodejs``` command. Sometime, some module run as Bash Shell that use ```node``` command, you may create symbolic link from ```nodejs``` to ```node``` to avoid command not found error.
+ >
+ 
 
 * Download source code of this project from https://github.com/khasathan/nodejs-mongodb-stream. However, you can clone by git
 
@@ -19,7 +24,7 @@ Streaming data in collection and push to client.
 ### Nodejs
 Install requires modules for this project. you can use NPM (Nodejs Package Manager)
  ```
- cd nodejs-mongodb-stream
+ cd node-mongodb-stream
  npm install
  ``` 
 NPM will be install specific modules in _package.json_ file. After install you should have _node\_modules_ directory.
@@ -52,7 +57,7 @@ Check the collection you create is capped
 * Running Nodejs server
 
  ```
- cd nodejs-mongodb-stream
+ cd node-mongodb-stream
  node app.js
  ```
 
